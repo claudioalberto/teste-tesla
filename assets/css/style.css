@@ -12,9 +12,7 @@ header h1 {
 
 /* Forms and Inputs */
 
-select {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+.form-select {
     min-width: 175px;
 }
 
@@ -27,10 +25,6 @@ select {
 
 
 /* Products List */
-
-.products-list {}
-
-.products-list__item:not(:first-child) {}
 
 .products-list__item figure {
     min-height: 350px;
@@ -91,6 +85,9 @@ footer {
     text-align: center;
 }
 
+
+/* Single Stylesheet */
+
 .single .title {
     font-size: 3rem;
 }
@@ -104,9 +101,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .actions-bar {
-        padding: 0px 1rem;
-    }
     .products-list__item .price strong {
         font-size: 1.5rem;
     }
