@@ -6,77 +6,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesla Teste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-    <header class="container">
-        <h1> Teste - Tesla</h1>
+    <header class="container mt-3 ">
+        <div class="row mx-0">
+            <div class="col-12 border rounded bg-light py-3 px-lg-3">
+                <h1 class="mb-0 text-center text-uppercase"> Tesla - Prova</h1>
+            </div>
+        </div>
     </header>
-    <main class="container">
-        <div class="actions-bar">
-            <div class="">
-                Iluminação Tintas e Acessorios
+    <main class="container px-0">
+        <div class="actions-bar d-flex justify-content-between mt-4 px-3 px-lg-3">
+            <div class="ms-2">
+                <span class="text-gray">Iluminação Tintas e Acessorios</span>
             </div>
             <div class="">
-                <select name="filter-products" id="filter-products" class="js-filter-products">
+                <select name="filter-products" class="form-select" id="filter-products" class="js-filter-products">
                     <option value="mais-vendido">Mais vendidos</option>
                     <option value="menor-preco">Menor preço</option>
                 </select>
             </div>
-
         </div>
-        <div class="products-list" id="products-list">
-            <div class="products-list__item" data-price="15.90" data-ranking="5">
-                <figure>
-                    <img src="assets/images/products/plafon-25cm.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
-                    <figcaption>
-                        <div class="category">
-                            <span>Iluminação</span>
-                        </div>
-                        <h2>Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte</h2>
-                        <div class="price">
-                            <p><strong>R$ 15,90</strong></p>
-                            <p><small>em até 3x de R$5,30</small></p>
-                        </div>
-                    </figcaption>
-                </figure>
+        <div class="products-list row mx-0 pt-4 justify-content-center justify-content-md-start" id="products-list">
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="15.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/plafon-25cm.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte" class="img-fluid">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte</h2>
+                                <div class="price">
+                                    <p><strong>R$ 15,90</strong></p>
+                                    <p><small>em até 3x de R$5,30</small></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
-            <div class="products-list__item" data-price="9.90" data-ranking="5">
-                <figure>
-                    <img src="assets/images/products/lampada-eletronica.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
-                    <figcaption>
-                        <div class="category">
-                            <span>Iluminação</span>
-                        </div>
-                        <h2>Lâmpada Eletrônica 3u 15w 127v 6400k</h2>
-                        <div class="price">
-                            <p><strong>R$ 9,90</strong></p>
-                            <p><small>em até 3x de R$3,30</small></p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="9.90" data-ranking="5">
+                <div class=" rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/lampada-eletronica.png" alt="Imagem - Lâmpada Eletrônica 3u 15w 127v 6400k" class="img-fluid">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Lâmpada Eletrônica 3u 15w 127v 6400k</h2>
+                                <div class="price">
+                                    <p><strong>R$ 9,90</strong></p>
+                                    <p><small>em até 3x de R$3,30</small></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
-            <div class="products-list__item" data-price="9.90" data-ranking="5">
-                <figure>
-                    <img src="assets/images/products/spot-de-embutir.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
-                    <figcaption>
-                        <div class="category">
-                            <span>Iluminação</span>
-                        </div>
-                        <h2>Spot de Embutir Fixo para Lâmpada R63 10,5cm Branco Ref. Mr063fbr Bronzearte</h2>
-                        <div class="price">
-                            <p><strong>R$ 13,90</strong></p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="13.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/spot-de-embutir.png" alt="Imagem - Spot de Embutir Fixo para Lâmpada R63 10,5cm Branco Ref. Mr063fbr Bronzearte" class="img-fluid">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Spot de Embutir Fixo para Lâmpada R63 10,5cm Branco Ref. Mr063fbr Bronzearte</h2>
+                                <div class="price">
+                                    <p><strong>R$ 13,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="32.90" data-ranking="9">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/lampada-decorativa-love.png" alt="Lâmpada Decorativa para Abajur Love Luz Amarela" class="img-fluid">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Lâmpada Decorativa para Abajur Love Luz Amarela</h2>
+                                <div class="price">
+                                    <p><strong>R$ 32,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4">
+                <div class="rounded border p-3" data-price="68.95" data-ranking="4">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/luminaria-de-mesa-branca.png" alt="Imagem - Luminária de Mesa Empire B Branca Startec" class="img-fluid">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Luminária de Mesa Empire B Branca Startec</h2>
+                                <div class="price">
+                                    <p><strong>R$ 68,95</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="46.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/lampada-colonial-ouro-velho.png" alt="Imagem - Arandela 01 Lâmpada 1-B Ouro Velho Ideal">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Iluminação</span>
+                                </div>
+                                <h2>Arandela 01 Lâmpada 1-B Ouro Velho Ideal</h2>
+                                <div class="price">
+                                    <p><strong>R$ 46,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="1.40" data-ranking="10">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/lixa-para-massa.png" alt="Imagem - Lixa para Massa N° 150 3M">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Lixa para Massa N° 150 3M</h2>
+                                <div class="price">
+                                    <p><strong>R$ 1,40</strong></p>
+                                </div>
+                            </figcaption>
+
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="16.90" data-ranking="2">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/cola-decoflair.png" alt="Imagem - Cola Decoflair 500g - Gart">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Cola Decoflair 500g - Gart</h2>
+                                <div class="price">
+                                    <p><strong>R$ 16,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="69.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/massa-corrida-suvinil.png" alt="Imagem - Massa Corrida Pva 18 Litros Suvinil">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Massa Corrida Pva 18 Litros Suvinil</h2>
+                                <div class="price">
+                                    <p><strong>R$ 69,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="12.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/rolo-adesivo-3m.png" alt="Imagem - Rolo Adesivo Scoth-Brite 3M">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Rolo Adesivo Scoth-Brite 3M</h2>
+                                <div class="price">
+                                    <p><strong>R$ 12,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="299.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/tinta-acrilica-suvinil.png" alt="Imagem - Tinta Acrílica Fosco Branco 18 Litros Suvinil">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Tinta Acrílica Fosco Branco 18 Litros Suvinil</h2>
+                                <div class="price">
+                                    <p><strong>R$ 299,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="184.90" data-ranking="5">
+                <div class="rounded border p-3">
+                    <figure>
+                        <img src="assets/images/products/adesivo-argamassa.png" alt="Imagem - Tinta Acrílica Fosco Branco 18 Litros Suvinil">
+                        <figcaption>
+                            <div class="category text-gray">
+                                <span>Tintas e Acessórios</span>
+                            </div>
+                            <h2>Adesivo Argamassa Líquido Bianco 18kg Otto Baumgart</h2>
+                            <div class="price">
+                                <p><strong>R$ 184,90</strong></p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="16.90" data-ranking="10">
+                <div class="rounded border p-3">
+                    <figure>
+                        <img src="assets/images/products/fita-crepe.png" alt="Imagem - Fita Crepe Blue Tape 24mm X 50metros 3M">
+                        <figcaption>
+                            <div class="category text-gray">
+                                <span>Tintas e Acessórios</span>
+                            </div>
+                            <h2>Fita Crepe Blue Tape 24mm X 50metros 3M</h2>
+                            <div class="price">
+                                <p><strong>R$ 16,90</strong></p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 px-lg-3 products-list__item mb-4" data-price="17.90" data-ranking="10">
+                <div class="rounded border p-3">
+                    <a href="single.html">
+                        <figure>
+                            <img src="assets/images/products/adesivo-plastico.png" alt="Imagem - Adesivo Plástico para Pvc Incolor Frasco 175g Tigre">
+                            <figcaption>
+                                <div class="category text-gray">
+                                    <span>Tintas e Acessórios</span>
+                                </div>
+                                <h2>Adesivo Plástico para Pvc Incolor Frasco 175g Tigre</h2>
+                                <div class="price">
+                                    <p><strong>R$ 17,90</strong></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>2021 &copy; - Copyright - Todos os direitos reservados</p>
+        <p>2021 &copy; - Copyright - Tesla - Prova</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 
