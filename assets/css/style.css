@@ -63,7 +63,12 @@ select {
     margin: 10px;
     border: 1px solid var(--gray);
     padding: 1rem;
+    min-height: 350px;
+    height: 375px;
     transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .products-list__item {
@@ -79,8 +84,10 @@ select {
 
 .products-list__item img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    background-color: #fff;
+    height: 200px;
 }
 
 .products-list__item .category span {
@@ -95,6 +102,8 @@ select {
 .products-list__item p {
     margin: 0px auto;
 }
+
+.products-list__item figcaption {}
 
 .products-list__item .price {
     margin-top: 2rem;

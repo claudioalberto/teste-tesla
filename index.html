@@ -19,15 +19,15 @@
                 Iluminação Tintas e Acessorios
             </div>
             <div class="">
-                <select name="filter-products" id="filter-productus" class="js-filter-products">
-                    <option value="">Mais vendidos</option>
-                    <option value="">Menor preço</option>
+                <select name="filter-products" id="filter-products" class="js-filter-products">
+                    <option value="mais-vendido">Mais vendidos</option>
+                    <option value="menor-preco">Menor preço</option>
                 </select>
             </div>
 
         </div>
-        <div class="products-list">
-            <div class="products-list__item">
+        <div class="products-list" id="products-list">
+            <div class="products-list__item" data-price="15.90" data-ranking="5">
                 <figure>
                     <img src="assets/images/products/plafon-25cm.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
                     <figcaption>
@@ -42,12 +42,42 @@
                     </figcaption>
                 </figure>
             </div>
-
+            <div class="products-list__item" data-price="9.90" data-ranking="5">
+                <figure>
+                    <img src="assets/images/products/lampada-eletronica.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
+                    <figcaption>
+                        <div class="category">
+                            <span>Iluminação</span>
+                        </div>
+                        <h2>Lâmpada Eletrônica 3u 15w 127v 6400k</h2>
+                        <div class="price">
+                            <p><strong>R$ 9,90</strong></p>
+                            <p><small>em até 3x de R$3,30</small></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="products-list__item" data-price="9.90" data-ranking="5">
+                <figure>
+                    <img src="assets/images/products/spot-de-embutir.png" alt="Imagem - Plafon Clean 25cm Branco com Fixador Cromado - Bronzearte">
+                    <figcaption>
+                        <div class="category">
+                            <span>Iluminação</span>
+                        </div>
+                        <h2>Spot de Embutir Fixo para Lâmpada R63 10,5cm Branco Ref. Mr063fbr Bronzearte</h2>
+                        <div class="price">
+                            <p><strong>R$ 13,90</strong></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </main>
     <footer>
         <p>2021 &copy; - Copyright - Todos os direitos reservados</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
